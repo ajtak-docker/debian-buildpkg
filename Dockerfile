@@ -2,13 +2,7 @@ FROM debian:latest
 
 RUN apt update && apt upgrade -y
 
-RUN apt install -y gcc make dpkg-dev g++ wget build-essential libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev zlib1g
-
-RUN wget -q -O Python.tgz https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
-
-RUN tar -xzvf Python.tgz
-
-RUN cd Python-3.7.2 && ./configure --enable-optimizations && make && make install
+RUN apt install -y gcc make dpkg-dev g++ wget build-essential libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev zlib1g python3
 
 RUN python3 --version
 
