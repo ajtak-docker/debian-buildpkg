@@ -18,11 +18,11 @@ RUN ln -sf /cmake/bin/cmake /usr/bin/cmake
 
 RUN mkdir -p /opt/src-fisloader
 
-ENV LANG en_US.UTF-8
+ENV LANG C.UTF-8
 
 ENV LANGUAGE en_US:en
 
-ENV LC_ALL en_US.UTF-8
+ENV LC_ALL C.UTF-8
 
 WORKDIR   /opt/src-fisloader
 
