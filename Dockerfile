@@ -2,7 +2,7 @@ FROM debian:latest
 
 RUN apt update && apt upgrade -y
 
-RUN apt install -y gcc make dpkg-dev g++ wget build-essential libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev zlib1g python3 python3-pip
+RUN apt install -y gcc make dpkg-dev g++ wget build-essential libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev zlib1g python3 python3-pip reprepro
 
 RUN python3 --version
 
