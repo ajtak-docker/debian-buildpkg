@@ -6,7 +6,7 @@ RUN apt install -y gcc make dpkg-dev g++ wget build-essential libncurses5-dev li
 
 RUN python3 --version
 
-RUN pip install mkdocs
+RUN pip3 install mkdocs
 
 RUN wget -q -O cmake.sh https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-Linux-x86_64.sh
 
